@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom'
+export default function AuthLayout({ children, kicker = 'WELCOME TO LEARNHUB', title, description }) { return <main className="auth-page"><Link className="logo auth-logo" to="/"><span className="logo-mark">L</span>learn<span>hub</span></Link><section className="auth-card"><p className="eyebrow">{kicker}</p><h1>{title}</h1><p className="auth-description">{description}</p>{children}</section><p className="auth-bottom">A little progress goes a long way.</p></main> }
